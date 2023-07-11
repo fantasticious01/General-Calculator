@@ -13,7 +13,7 @@ html{
 
 body{
     align-items: center;
-    background: linear-gradient(320deg, #eb92be, #ffef78, #68c964);
+    background: rgba(0, 0, 0, 1);
     display: flex;
     font-family: "Dosis", sans-serif;
     font-display: swap;
@@ -80,20 +80,21 @@ body{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #fff;
-    background: #d72880;
+    background: #725236;
 }
 
 .cal-button:last-child:hover{
     background-color: inherit;
-    color: inherit;
+    color: #ff9f40;
 }
 
 .cal-button:hover{
     background-color: inherit;
+    color: #ff9f40;
 }
 
 .cal-button:active{
-    background-color: #ffef78;
+    background-color: #1d2b32;
 }
 
 .double{
