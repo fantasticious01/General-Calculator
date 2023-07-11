@@ -1,3 +1,5 @@
+// The code was written with the help of the YouTube channel AsmrProg in this link ---> https://www.youtube.com/watch?v=sBJmRD7kNTk&t=1497s
+
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
