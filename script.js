@@ -5,7 +5,7 @@ let previousOperator;
 const screen = document.querySelector('.screen');
 
 function buttonClick(value){
-    if(isNan(value)){
+    if(isNaN(value)){
         handleSymbol(value);
     } else{
         handleNumber(value);
@@ -20,7 +20,7 @@ function handleSymbol(symbol){
             runningTotal = 0;
             break;
         case '=':
-            if(previousOperator == null){
+            if(previousOperator === null){
                 return;
             }
             flushOperation(parseInt(buffer));
@@ -36,8 +36,8 @@ function handleSymbol(symbol){
             }
             break;
         case '+':
-        case '-':
-        case 'x':
+        case '−':
+        case '×':
         case '÷':
             handleMath(symbol);
             break;
@@ -63,9 +63,9 @@ function handleMath(symbol){
 function flushOperation(intBuffer){
     if(previousOperator === '+'){
         runningTotal += intBuffer;
-    } else if(previousOperator === '-'){
+    } else if(previousOperator === '−'){
         runningTotal -= intBuffer;
-    } else if(previousOperator === 'x'){
+    } else if(previousOperator === '×'){
         runningTotal *= intBuffer;
     } else if(previousOperator === '÷'){
         runningTotal /= intBuffer;
@@ -87,3 +87,4 @@ function init(){
 }
 
 init();
+
